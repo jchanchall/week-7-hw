@@ -44,7 +44,12 @@ function dayTime(event) {
 console.log(dayTime);
 form.addEventListener("submit", dayTime);
 
-//HW
+function search(event) {
+  event.preventDefault();
+  let city = document.querySelector("#citySearch").value;
+  search(city);
+}
+console.log(search);
 
 function newCity(event) {
   event.preventDefault();
